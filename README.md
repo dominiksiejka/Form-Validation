@@ -4,7 +4,7 @@
 
 [**click live demo of the project**](https://dominiksiejka.github.io/BillSplitterApp)
 
-![FormValidation preview](./assets/billsplitter.jpg)
+![FormValidation preview](./assets/formvalidation.jpg)
 
 ## Table of Contents
 
