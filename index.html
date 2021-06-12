@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="info-modal"></div>
+    <div class="main">
+      <h2>Register now!</h2>
+      <form action="" novalidate>
+        <label for="username"
+          >Username:
+          <input id="username" type="text" placeholder="username..." />
+          <p id="usernameMessage"></p>
+        </label>
+        <label for="password"
+          >Password:
+          <input id="password" type="password" placeholder="password..." />
+          <p id="passwordMessage"></p>
+        </label>
+        <label for="repeatPass"
+          >Repeat password:
+          <input id="repeatPass" type="password" placeholder="repeat pass..." />
+          <p id="passwordSubMessage"></p>
+        </label>
+        <label for="email"
+          >Email adress:
+          <input id="email" type="email" placeholder="email..." />
+          <p id="emailMessage"></p>
+        </label>
+        <button>Submit</button>
+      </form>
+    </div>
+    <div class="scroll-info">
+      <p class="scroll-arrow"><i class="fas fa-arrow-down"></i></p>
+    </div>
+    <div class="infoBox">
+      <p>
+        <span>Username</span> must contain as least 3 small or big letters and
+        at least 2 digits.
+      </p>
+      <p>
+        <span>Password</span> must contain lower case and upper case letters and
+        be at least 7 chars long.
+      </p>
+      <p>
+        <span>E-mail</span> must contain only one @ and domain extension for
+        example .com, .eu
+      </p>
+    </div>
+    <div class="sendProcess">
+      <svg height="60" width="60">
+        <circle
+          cx="30"
+          cy="30"
+          r="15"
+          fill="transparent"
+          stroke="white"
+          stroke-width="5"
+          stroke-dasharray="4"
+        />
+      </svg>
+      <p>Sending data...</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
